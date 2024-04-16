@@ -1,14 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include_once __DIR__ . '/partials/head.php';
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+session_start();
 
-<body>
-  <h1></h1>
+if (!isset($_SESSION['new_password'])) {
+  header('Location: ./index.php');
+} else {
+  $password = $_SESSION['new_password'];
+}
+
+// var_dump($_SESSION['new_password'])
+?>
+
+<body class="bg-secondary">
+  <div class="container my-5">
+    <h1>Ecco la tua Password Generata</h1>
+    <h3><?php echo $password; ?></h3>
+  </div>
 </body>
 
 </html>

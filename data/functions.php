@@ -11,14 +11,3 @@ function passwordGenerator($length)
 
   return $password;
 }
-
-$passwordGen = '';
-$error = '';
-if (isset($_POST['passwordLength'])) {
-  $passwordLength = $_POST['passwordLength'];
-  if ($passwordLength < 6) {
-    $error = 'Errore! La password deve essere almeno di 6 caratteri!!';
-  } else {
-    $passwordGen = passwordGenerator($passwordLength);
-  }
-}
