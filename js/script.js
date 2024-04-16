@@ -1,0 +1,1 @@
+console.log('PHP Strong Password Generator');
