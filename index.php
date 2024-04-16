@@ -32,12 +32,13 @@ if (isset($_POST['passwordLength'])) {
       <form action="index.php" method="POST">
         <div>
           <div class="pe-3 mb-3 d-flex ">
-            <label for="passwordLength" class="form-label w-75">Lunghezza della password:</label>
-            <input type="number" class="form-control w-25" id="passwordLength" name="passwordLength">
+            <label for="passwordLength" class="form-label w-75 col-6">Lunghezza della password:</label>
+            <input type="number" class="form-control w-25 col-6" id="passwordLength" name="passwordLength">
           </div>
         </div>
-        <div class="d-flex justify-content-end">
-          <button type="submit" class="btn btn-success justify-content-end">Generate Password</button>
+        <div>
+          <button type="submit" class="btn btn-success">Generate Password</button>
+          <button type="submit" class="btn btn-dark ">Annulla</button>
         </div>
       </form>
 
