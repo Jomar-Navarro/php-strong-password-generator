@@ -1,5 +1,12 @@
 .square{
-  background-color: darkslategrey;
+  background-color: darkslateblue;
   border-radius: 30px;
   color: white;
+  height: 15rem;
+  width: 500px;
+}
+
+.error{
+  background-color: darkgrey;
+  border-radius: 10px;
 }

@@ -21,12 +21,12 @@ if (isset($_POST['passwordLength'])) {
 ?>
 
 <main>
-  <div class="container d-flex justify-content-center">
+  <div class="container d-flex justify-content-center align-items-center">
 
-    <div class="square w-50 p-5">
+    <div class="square w-50 p-5 ">
 
       <?php if (!empty($error)) : ?>
-        <p class="text-danger"><?php echo $error ?></p>
+        <p class="text-danger p-3 error"><?php echo $error ?></p>
       <?php endif ?>
 
       <form action="index.php" method="POST">
@@ -36,7 +36,9 @@ if (isset($_POST['passwordLength'])) {
             <input type="number" class="form-control w-25" id="passwordLength" name="passwordLength">
           </div>
         </div>
-        <button type="submit" class="btn btn-success ">Generate Password</button>
+        <div class="d-flex justify-content-end">
+          <button type="submit" class="btn btn-success justify-content-end">Generate Password</button>
+        </div>
       </form>
 
     </div>
